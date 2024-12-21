@@ -7,7 +7,8 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function Page() {
   return (
-<div className="min-h-screen bg-black text-white">
+<div className="flex min-h-screen items-center justify-center bg-black text-whites">
+<div className="w-full max-w-6xl">
   {/* Hero Section */}
   <section className="container px-4 pt-32 pb-20 md:px-6">
     <div className="flex flex-col md:flex-row items-center gap-12">
@@ -81,13 +82,13 @@ export default function Page() {
             </p>
             <div className="mt-6 flex gap-4">
               <Button variant="ghost" size="sm" asChild>
-                <Link href="https://galeri.losa.dev">
+                <Link target="_blank" href="https://galeri.losa.dev">
                   <Camera className="mr-2 h-4 w-4" />
                   Galerim
                 </Link>
               </Button>
               <Button variant="ghost" size="sm" asChild>
-                <Link href="https://github.com">
+                <Link href="https://github.com/lewislosa">
                   <Github className="mr-2 h-4 w-4" />
                   GitHub
                 </Link>
@@ -119,6 +120,7 @@ export default function Page() {
           </Button>
         </div>
       </footer>
+    </div>
     </div>
   );
 }
